@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1.7rem 0;
+}
+
+.logo {
+    width: 35%;
+    padding-left: 2rem;
+}
+
+.mobile-hero {
+    width: 100%;
+}
+
+.desktop-hero {
+    display: none;
+}
+
+.promo {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.7rem;
+    letter-spacing: 0.55rem;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 1.2rem;
+}
+
+.accent, p {
+    color: var(--desaturated-red);
+}
+
+.accent {
+    font-weight: 300;
+}
+
+.promo p {
+    font-size: 0.9rem;
+    width: 85%;
+    margin: auto;
+    line-height: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.email {
+    font-family: inherit;
+    background: none;
+    padding: 1.1em 1.7em;
+    width: 85%;
+    border: 0.063rem solid var(--desaturated-red);
+    border-radius: 1.5rem; 
+    position: relative;
+}
+
+.email::placeholder {
+    color: var(--desaturated-red);
+    font-size: 0.8rem;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.btn {
+    position: absolute;
+    right: 1.688rem;
+    padding: 0.88em 1.65em;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 8px 15px 0px rgba(206, 151, 151, 0.6);
+}
+
+.btn img {
+    width: 90%;
+}
+
+.attribution {
+    font-size: 0.75rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--soft-red);
+}
