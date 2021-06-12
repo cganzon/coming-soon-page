@@ -72,14 +72,19 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.email-container {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
 .email {
     font-family: inherit;
     background: none;
-    padding: 1.1em 1.7em;
-    width: 85%;
+    padding: 1.15em 1.7em;
+    width: 100%;
     border: 0.063rem solid var(--desaturated-red);
-    border-radius: 1.5rem; 
-    position: relative;
+    border-radius: 2rem; 
 }
 
 .email::placeholder {
@@ -93,8 +98,8 @@ h1 {
 
 .btn {
     position: absolute;
-    right: 1.688rem;
-    padding: 0.88em 1.65em;
+    right: -1px;
+    padding: 0.92em 1.66em;
     border-radius: 1.5rem;
     outline: none;
     border: none;
