@@ -177,6 +177,10 @@ label {
         display: block;
     }
 
+    .desktop-hero {
+        object-fit: cover;
+    }
+
     .promo {
         padding: 4rem 10rem;
         text-align: left;
@@ -219,7 +223,7 @@ label {
     }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1440px) {
     body {
         display: flex;
         justify-content: center;
