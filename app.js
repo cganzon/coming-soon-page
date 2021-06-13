@@ -1,16 +1,19 @@
 let btn = document.querySelector('.btn');
 let email = document.querySelector('.email');
-let error = document.querySelector('.email-error-message');
+let errorMessage = document.querySelector('.email-error-message');
+let errorIcon = document.querySelector('.error-icon');
 
 btn.addEventListener('click', e => {
     e.preventDefault();
     let emailValue = email.value;
     if(validateEmail(emailValue)) {
         email.classList.remove('email-error');
-        error.classList.remove('show-error');
+        errorMessage.classList.remove('show-error');
+        errorIcon.classList.remove('show-error');
     } else {
         email.classList.add('email-error');
-        error.classList.add('show-error');
+        errorMessage.classList.add('show-error');
+        errorIcon.classList.add('show-error');
     };
 });
 
