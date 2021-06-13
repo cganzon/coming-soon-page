@@ -20,6 +20,10 @@ body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
+label {
+    display: none;
+}
+
 .container {
     max-width: 31.25rem;
     margin: 0 auto;
